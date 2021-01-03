@@ -9,15 +9,15 @@ export default class ButtonBackCircle extends Component {
         onPress={this.props.pressBack} style={this.props.position == true && {position: 'absolute', zIndex: 100, margin: 16}}>
         <View
           style={{
-            backgroundColor: '#1B141F',
-            width: 48,
-            height: 48,
+            backgroundColor: '#FFF',
+            width: 55,
+            height: 55,
             borderRadius: 100,
             alignItems: 'center',
             flexDirection: 'column',
             justifyContent: 'center',
           }}>
-          <Icon name="arrow-back-outline" size={32} color={'#FFF'} />
+          <Icon name="arrow-back-outline" size={32} color={'#1B141F'} />
         </View>
       </TouchableOpacity>
     );

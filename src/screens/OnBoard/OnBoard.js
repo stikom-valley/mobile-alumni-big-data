@@ -12,7 +12,7 @@ export default class OnBoard extends Component {
   };
   render() {
     return (
-      <View style={{backgroundColor: '#EBEBF4'}}>
+      <View style={{backgroundColor: '#EBEBF4', height: '100%'}}>
         <Image
           source={require('./../../assets/images/background-one.png')}
           style={{width: '100%', height: 250, position: 'absolute'}}

@@ -48,7 +48,7 @@ export default class LandingPage extends Component {
       <ScrollView style={{height: '100%', backgroundColor: '#EBEBF4'}}>
         <View style={{backgroundColor: '#37B7C9', height: 200}}>
           <View
-            style={{flexDirection: 'row', alignItems: 'center', margin: 24}}>
+            style={{flexDirection: 'row', alignItems: 'center', margin: 16}}>
             <Image
               source={require('./../../assets/images/avatar3.png')}
               style={{width: 64, height: 64, marginRight: 16}}
@@ -65,22 +65,22 @@ export default class LandingPage extends Component {
             backgroundColor: '#fff',
             paddingVertical: 16,
             paddingHorizontal: 24,
-            margin: 24,
-            width: deviceWidth - 48,
+            margin: 16,
+            width: deviceWidth - 32,
             borderRadius: 10,
             top: 100,
             position: 'absolute',
             zIndex: 100,
           }}>
-          <Text>
+          <Text style={{color: '#4F4F4F'}}>
             Alumni{' '}
-            <Text style={{fontWeight: 'bold'}}>S1 Sistem Informasi 2018</Text>
+            <Text style={{fontWeight: 'bold', color: '#161719'}}>S1 Sistem Informasi 2018</Text>
           </Text>
-          <Text style={{marginTop: 14}}>Perusahaan</Text>
+          <Text style={{marginTop: 14, color: '#4F4F4F'}}>Perusahaan</Text>
           <Text style={{fontWeight: 'bold', marginTop: 4}}>
             Gojek Indonesia
           </Text>
-          <Text style={{marginTop: 14}}>Pekerjaan</Text>
+          <Text style={{marginTop: 14, color: '#4F4F4F'}}>Pekerjaan</Text>
           <Text style={{fontWeight: 'bold', marginTop: 4}}>Designer</Text>
           <Image
             source={require('./../../assets/images/company-logo.png')}
@@ -101,15 +101,15 @@ export default class LandingPage extends Component {
             height: 100,
             width: '100%',
             position: 'absolute',
-            borderTopLeftRadius: 20,
-            borderTopRightRadius: 20,
+            borderTopLeftRadius: 30,
+            borderTopRightRadius: 30,
             zIndex: 99,
             top: 160,
           }}
         />
 
-        <View style={{marginTop: 120, flexDirection: 'row', marginHorizontal: 24}}>
-          <Text style={{fontWeight: 'bold'}}>Alumni di angkatan anda</Text>
+        <View style={{marginTop: 100, flexDirection: 'row', marginHorizontal: 16}}>
+          <Text>Alumni di angkatan anda</Text>
           <Text style={{marginLeft: 'auto', color: '#46BCCC'}}>Lihat Semua</Text>
         </View>
         <FlatList
@@ -125,7 +125,7 @@ export default class LandingPage extends Component {
                   marginBottom: 16,
                   paddingVertical: 36,
                   paddingHorizontal: 16,
-                  marginHorizontal: 24,
+                  marginHorizontal: 16,
                   borderRadius: 10,
                 }}>
                 <Text>{item.name}</Text>

@@ -16,8 +16,11 @@ import Login from './src/screens/Login/Login';
 import Register from './src/screens/Register/Register';
 import LandingPage from './src/screens/LandingPage/LandingPage';
 import Alumni from './src/screens/Alumni/Alumni';
+import DetailAlumni from './src/screens/Alumni/DetailAlumni';
 import Bantuan from './src/screens/Bantuan/Bantuan';
 import Profile from './src/screens/Profile/Profile';
+import EditProfile from './src/screens/Profile/EditProfile';
+import Kuisioner from './src/screens/Kuisioner/Kuisioner';
 import Home from './src/screens/Home';
 
 const Stack = createStackNavigator();
@@ -37,8 +40,11 @@ export default class App extends Component {
           <Stack.Screen name="Home" component={Home} />
           <Stack.Screen name="LandingPage" component={LandingPage} />
           <Stack.Screen name="Alumni" component={Alumni} />
+          <Stack.Screen name="DetailAlumni" component={DetailAlumni} />
           <Stack.Screen name="Bantuan" component={Bantuan} />
           <Stack.Screen name="Profile" component={Profile} />
+          <Stack.Screen name="EditProfile" component={EditProfile} />
+          <Stack.Screen name="Kuisioner" component={Kuisioner} />
         </Stack.Navigator>
       </NavigationContainer>
     );

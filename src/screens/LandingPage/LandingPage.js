@@ -43,6 +43,9 @@ export default class LandingPage extends Component {
       ],
     };
   }
+  goToDetailAlumni = () => {
+    this.props.navigation.navigate('DetailAlumni');
+  };
   render() {
     return (
       <ScrollView style={{height: '100%', backgroundColor: '#EBEBF4'}}>
@@ -119,7 +122,7 @@ export default class LandingPage extends Component {
           data={this.state.listAlumni}
           renderItem={({item, index}) => {
             return (
-              <TouchableOpacity
+              <TouchableOpacity onPress={this.goToDetailAlumni}
                 style={{
                   backgroundColor: '#fff',
                   marginBottom: 16,

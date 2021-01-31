@@ -21,6 +21,9 @@ import Bantuan from './src/screens/Bantuan/Bantuan';
 import Profile from './src/screens/Profile/Profile';
 import EditProfile from './src/screens/Profile/EditProfile';
 import Kuisioner from './src/screens/Kuisioner/Kuisioner';
+import Kuisioner2 from './src/screens/Kuisioner/Kuisioner2';
+import Kuisioner3 from './src/screens/Kuisioner/Kuisioner3';
+import Kuisioner4 from './src/screens/Kuisioner/Kuisioner4';
 import Home from './src/screens/Home';
 
 const Stack = createStackNavigator();
@@ -45,6 +48,9 @@ export default class App extends Component {
           <Stack.Screen name="Profile" component={Profile} />
           <Stack.Screen name="EditProfile" component={EditProfile} />
           <Stack.Screen name="Kuisioner" component={Kuisioner} />
+          <Stack.Screen name="Kuisioner2" component={Kuisioner2} />
+          <Stack.Screen name="Kuisioner3" component={Kuisioner3} />
+          <Stack.Screen name="Kuisioner4" component={Kuisioner4} />
         </Stack.Navigator>
       </NavigationContainer>
     );

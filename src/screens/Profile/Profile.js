@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import ButtonGreen from './../../component/ButtonGreen';
-import {Text, View, Dimensions, Image, FlatList, StyleSheet,} from 'react-native';
+import {Text, View, Dimensions, Image, FlatList, StyleSheet, TextInput} from 'react-native';
 import {ScrollView, TouchableOpacity} from 'react-native-gesture-handler';
 
 const deviceWidth = Dimensions.get('window').width;
@@ -59,9 +59,26 @@ export default class LandingPage extends Component {
                     marginTop: 4,
                     }}>
                 </View>
-                <Text style={{alignSelf: 'flex-end'}}>
-                    50%
-                  </Text>
+                <TouchableOpacity onPress={this.goToKuisinoer}
+                style={[
+                  LStyles.checkButton,
+                  {
+                    marginTop: 4,
+                    width: 220,
+                    height: 25,
+                    // zIndex: 100,
+                  },
+                ]}>
+                  <Text
+                  style={{
+                    color: '#FFF',
+                    alignSelf: 'flex-end',
+                    marginTop: -6
+                  }}>
+                  {/* {item.title} */}
+                  65%
+                </Text>
+                </TouchableOpacity>
                 <TouchableOpacity onPress={this.goToKuisinoer}
                 style={[
                   LStyles.checkButton,

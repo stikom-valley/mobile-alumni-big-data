@@ -13,8 +13,8 @@ export default class OnBoard extends Component {
       haveLinkedIn: false,
     };
   }
-  goToKuis2 = () => {
-    this.props.navigation.navigate('Kuisioner2');
+  goToKuis3 = () => {
+    this.props.navigation.navigate('Kuisioner3');
   };
   goBack = () => {
     this.props.navigation.goBack();
@@ -39,18 +39,28 @@ export default class OnBoard extends Component {
             Isilah Pertanyaan Dibawah Ini Sesuai{'\n'}
             <Text style={{fontSize: 12}}>Dengan Data Aslimu</Text>
           </Text>
-          <Text style={{fontSize: 20, marginTop: 10, fontWeight: 'bold'}}>Data Pribadi</Text>
-          <Text style={{fontSize: 16, marginTop: 10, fontWeight: 'bold'}}>Nama Lengkap</Text>
+          <Text style={{fontSize: 20, marginTop: 10, fontWeight: 'bold'}}>Riwayat Pendidikan</Text>
+          <Text style={{fontSize: 16, marginTop: 10, fontWeight: 'bold'}}>Tahun Masuk</Text>
           <View style={[LStyles.searchSection, {marginTop: 4}]}>
             <TextInput
               style={[LStyles.inputTextStyle]}
-              placeholder="Masukkan Nama Lengkap"
+              placeholder="Masukkan Tahun Masuk"
               placeholderTextColor="#767676"
               value={this.state.namalengkap}
               onChangeText={(namalengkap) => this.setState({namalengkap})}
             />
           </View>
-          <Text style={{fontSize: 16, marginTop: 10, fontWeight: 'bold'}}>Tempat / Tanggal Lahir</Text>
+          <Text style={{fontSize: 16, marginTop: 10, fontWeight: 'bold'}}>Bulan dan Tahun Lulus (Wisuda)</Text>
+          <View style={[LStyles.searchSection, {marginTop: 4}]}>
+            <TextInput
+              style={[LStyles.inputTextStyle]}
+              placeholder="Masukkan Bulan dan Tahun Lulus (Wisuda)"
+              placeholderTextColor="#767676"
+              value={this.state.namalengkap}
+              onChangeText={(namalengkap) => this.setState({namalengkap})}
+            />
+          </View>
+          <Text style={{fontSize: 16, marginTop: 10, fontWeight: 'bold'}}>Fakultas</Text>
           <View style={[LStyles.searchSection, {marginTop: 4}]}>
             <TextInput
               style={[LStyles.inputTextStyle]}
@@ -60,60 +70,50 @@ export default class OnBoard extends Component {
               onChangeText={(tmptlahir) => this.setState({tmptlahir})}
             />
           </View>
-          <Text style={{fontSize: 16, marginTop: 10, fontWeight: 'bold'}}>Alamat Kantor</Text>
+          <Text style={{fontSize: 16, marginTop: 10, fontWeight: 'bold'}}>Program Studi</Text>
           <View style={[LStyles.searchSection, {marginTop: 4}]}>
             <TextInput
               style={[LStyles.inputTextStyle]}
-              placeholder="Masukkan Alamat Kantor"
+              placeholder="Masukkan Program Studi"
               placeholderTextColor="#767676"
               value={this.state.almtkntr}
               onChangeText={(almtkntr) => this.setState({almtkntr})}
             />
           </View>
-          <Text style={{fontSize: 16, marginTop: 10}}>No. telp Kantor</Text>
-          <View style={[LStyles.searchSection, {marginTop: 4, width: 190}]}>
+          <Text style={{fontSize: 16, marginTop: 10, fontWeight: 'bold'}}>Apakah Saudara Berorganisasi Ketika Masih Mahasiswa?</Text>
+          <View style={[LStyles.searchSection, {marginTop: 4}]}>
             <TextInput
               style={[LStyles.inputTextStyle]}
-              placeholder="Masukkan No.telp Kantor"
+              placeholder="Alasan"
               placeholderTextColor="#767676"
               value={this.state.almtkntr}
               onChangeText={(almtkntr) => this.setState({almtkntr})}
             />
           </View>
-          <Text style={{fontSize: 16, marginTop: 10, fontWeight: 'bold'}}>Alamat Rumah / Kontrak</Text>
+          <Text style={{fontSize: 16, marginTop: 10, fontWeight: 'bold'}}>Indeks Prestasi Kumulatif (IPK) Terakhir</Text>
           <View style={[LStyles.searchSection, {marginTop: 4}]}>
             <TextInput
               style={[LStyles.inputTextStyle]}
-              placeholder="Masukkan Alamat Rumah"
+              placeholder="Masukkan IPK"
               placeholderTextColor="#767676"
               value={this.state.email}
               secureTextEntry={true}
               onChangeText={(email) => this.setState({email})}
             />
           </View>
-          <Text style={{fontSize: 16, marginTop: 10}}>No. telp Rumah</Text>
-          <View style={[LStyles.searchSection, {marginTop: 4, width: 190}]}>
-            <TextInput
-              style={[LStyles.inputTextStyle]}
-              placeholder="Masukkan No.telp Rumah"
-              placeholderTextColor="#767676"
-              value={this.state.almtkntr}
-              onChangeText={(almtkntr) => this.setState({almtkntr})}
-            />
-          </View>
-          <Text style={{fontSize: 16, marginTop: 10, fontWeight: 'bold'}}>Alamat E-mail</Text>
+          <Text style={{fontSize: 16, marginTop: 10, fontWeight: 'bold'}}>Setelah lulus, apakah Saudara sudah / pernah bekerja?</Text>
           <View
             style={[LStyles.searchSection, {marginTop: 4, marginBottom: 18}]}>
             <TextInput
               style={[LStyles.inputTextStyle]}
-              placeholder="Masukkan E-mail"
+              placeholder="Alasan"
               placeholderTextColor="#767676"
               value={this.state.email}
               secureTextEntry={true}
               onChangeText={(email) => this.setState({email})}
             />
           </View>
-          <ButtonGreen title="Selanjutnya" goTo={this.goToKuis2} />
+          <ButtonGreen title="Selanjutnya" goTo={this.goToKuis3} />
         </View>
       </ScrollView>
     );

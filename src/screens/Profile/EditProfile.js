@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import ButtonGreen from './../../component/ButtonGreen';
+import ButtonBackCircle from './../../component/ButtonBackWhite';
 import {Text, View, Dimensions, Image, FlatList, StyleSheet, TextInput} from 'react-native';
 import {ScrollView, TouchableOpacity} from 'react-native-gesture-handler';
 
@@ -27,6 +28,7 @@ export default class LandingPage extends Component {
     return (
       <ScrollView style={{height: '100%', backgroundColor: '#EBEBF4'}}>
         <View style={{backgroundColor: '#37B7C9', height: 240}}>
+        
           <View
             style={{alignItems: 'center', margin: 16}}>
             <Text style={{alignSelf: 'center', fontSize: 24, color: '#fff', marginTop: 30, fontWeight: 'bold',}}>Edit Profil</Text>
@@ -48,8 +50,8 @@ export default class LandingPage extends Component {
                 }}>
                 <Text>Nama Lengkap</Text>
                 <TextInput
-                  style={[LStyles.inputTextStyle, {marginTop: 13, marginBottom: 16}]}
-                  placeholder="Nama Lengkap"
+                  style={[LStyles.inputTextStyle, {marginTop: 4, marginBottom: 16}]}
+                  placeholder="Mochammad Imam Mahudi"
                   placeholderTextColor="#fff"
                   backgroundColor="#767676"
                   value={this.state.name}
@@ -59,7 +61,7 @@ export default class LandingPage extends Component {
                 <Text>Radio Button</Text>
                 <Text>Tempat Tanggal Lahir</Text>
                 <TextInput
-                  style={[LStyles.inputTextStyle, {marginTop: 13, marginBottom: 16}]}
+                  style={[LStyles.inputTextStyle, {marginTop: 4, marginBottom: 16}]}
                   placeholder="Surabaya"
                   placeholderTextColor="#fff"
                   backgroundColor="#767676"
